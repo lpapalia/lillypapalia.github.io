@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<title>Lilly Papalia</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<style>
+body {font-family: "Times New Roman", Georgia, Serif;}
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Playfair Display";
+  letter-spacing: 5px;
+}
+.dropbtn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: #3e8e41;
+}
+</style>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-padding w3-card" style="letter-spacing:4px;">
+    <a href="#home" class="w3-bar-item w3-button">Lilly Papalia</a>
+    <!-- Right-sided navbar links. Hide them on small screens -->
+    <div class="w3-right w3-hide-small">
+      <a href="#about" class="w3-bar-item w3-button">About</a>
+      <a href="#projects" class="w3-bar-item w3-button">Projects</a>
+      <a href="#contact" class="w3-bar-item w3-button">Contact</a>
+    </div>
+  </div>
+</div>
+
+<!-- Header -->
+<header class="w3-display-container w3-content w3-wide" style="max-width:1600px;min-width:500px" id="home">
+  <img class="w3-image" src="C:\Users\lcpap\OneDrive\Documents\My Website\explosion.jpg" alt="Explosion" width="1600" height="800">
+</header>
+
+<!-- Page content -->
+<div class="w3-content" style="max-width:1100px">
+
+  <!-- About Section -->
+  <div class="w3-row w3-padding-64" id="about">
+    <div class="w3-col m6 w3-padding-large w3-hide-small">
+     <img src="C:\Users\lcpap\OneDrive\Documents\My Website\me.jpg" class="w3-round w3-image" alt="Lilly" width="600" height="600">
+    </div>
+
+    <div class="w3-col m6 w3-padding-large">
+      <h1 class="w3-center"><b><u>About Me</u></b></h1>
+      <p class="w3-large">Hello! My name is Lilly Papalia, and I am a junior studying mechanical engineering at Massachusetts Institute of Technology. I am also completing a minor in computer science, and I am involved in a program called New Engineering Education Transformation (NEET) in the autonomous machines thread. With NEET I am completing a project based curriculum focused on designing, building, and programming autonomous machines. I am interested in the aerospace, automobile, and robotics industries. I am excited to display some of the projects I have worked on!</p>
+    </div>
+  </div>
+  
+  <hr>
+  
+  <!-- Projects Section -->
+  <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="projects">
+    <h1 class="w3-wide"><b><u>Projects</u></b></h1>
+    <h2 class="w3-wide" id = "winerack"><u>Wine Rack</u></h2>
+    <p class="">When I first moved home from MIT due to the pandemic, I was very upset. My manufacturing class went virtual, and I was not able to apply the knowledge learned in my classes to physically build something. Luckily, my father is a mechanical engineer and has many tools and manufacturing equiptment. I decided to take on the task of building a wine rack for my parents! Here is some more details on this project!</p>
+    <div class="w3-row w3-padding-32">
+        
+        <!--CAD MODEL-->
+        <h4> Step 1: CAD Model</h4>
+        <p>The first step was measuring the dimensions of the wine cellar. After knowing the dimensions I could start designing. After searching through pinterst for design inspirations I landed on two designs. In Solidworks, I was able to combine the two designs into one wine rack, as shown in the CAD model below.</p>
+        <img src="C:\Users\lcpap\OneDrive\Documents\My Website\CAD.png" class="w3-round w3-margin-bottom" alt="cad model" style="width:80%">
+
+        <!--Prototype-->
+        <h4> Step 2: Prototype</h4>
+        <p>Next I built a mini prototype of an X (shown on the second shelf in the picture below) to ensure the saw cut designs would fit together correctly. Then I started building!</p>
+        <img src="C:\Users\lcpap\OneDrive\Documents\My Website\prototype.jpg" class="w3-round w3-margin-bottom" alt="prototype" style="width:80%">
+
+        <!--Prototype-->
+        <h4> Step 3: Assemble</h4>
+        <p>Next I build one side of the design. The bottom X was removed to store wine crates. Unfortunatly, I had to move before finishing the whole assembly, but will be completeing it this winter! Updates coming soon! </p>
+        <img src="C:\Users\lcpap\OneDrive\Documents\My Website\finished shelves.jpg" class="w3-round w3-margin-bottom" alt="finsihed" style="width:80%">
+
+
+        <!--robot-->
+        <h2 class="w3-wide" id = "2007"><u>Autonomous Robot</u></h2>
+        <h4> </h4>
+        <p>For my design and manufacturing class last Spring, the focus of the class is to design and build an autonomous robot to compete on a game board. Unfortunatly, I was not able to build the robot I designed due to the pandemic, but in the first half of the semester I namufactured a prototype robot. </p>
+        <h4> CAD Model</h4>
+        <p>Below is the CAD model of the robot I desgined for the competition. The sheet metal on the back of the robot would be used to psuh items around the gaem board, and the claw on the front woul dbe used to rotate a wheel. I performed torque calculations to ensure the selected motor has enough torque to rotate the wheel. I also used Solidworks FEA analysis to ensure the sheet metal could withstand the applied force without deformations. </p>
+        <img src="C:\Users\lcpap\OneDrive\Documents\My Website\robot1.jpg" class="w3-round w3-margin-bottom" alt="robot1" style="width:80%">
+        <img src="C:\Users\lcpap\OneDrive\Documents\My Website\robot2.jpg" class="w3-round w3-margin-bottom" alt="robot2" style="width:80%">
+        
+        <h4> Prototype</h4>
+        <p>Before the pandemic, I manufactured a prototype robot pictured below. This robot could navigate the gameboard autonomously utilizing an ultrasonic sensor and line following.</p>
+        <img src="C:\Users\lcpap\OneDrive\Documents\My Website\robotpic.jpg" class="w3-round w3-margin-bottom" alt="minime" style="width:80%">
+
+        <h2 class="w3-wide" id = "arm"><u>Robot Arm 6 DOFs</u></h2>
+        <p>My most recent project has been a robot arm with degrees of freedom. I assembled the robot arm, and have been testing the controller. Future development includes mounting the arm, and programming the arm to pick up objects using the claw.</p>
+        <img src="C:\Users\lcpap\OneDrive\Documents\My Website\arm1.jpg" class="w3-round w3-margin-bottom" alt="robot1" style="width:80%">
+
+        <h4> </h4>
+        <p></p>
+        <img src="C:\Users\lcpap\OneDrive\Documents\My Website\arm2.jpg" class="w3-round w3-margin-bottom" alt="robot1" style="width:80%">
+    </div>
+  </div>
+
+  <hr>
+
+  <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="contact"> 
+    <h1 class="w3-wide"><b><u>Contact</u></b></h1> 
+    <a href="https://www.linkedin.com/in/lillian-papalia-79a504181/" class="w3-bar-item w3-button">LinkedIn</a>
+    <p><b>Email:</b>lpapalia@mit(dot)edu</p>
+
+  
+  
+  </div>
+<!-- End page content -->
+</div>
+
+
+</body>
+</html>
