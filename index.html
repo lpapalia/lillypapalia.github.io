@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html>
+<head>
 <title>Lilly Papalia</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" charset="UTF-8" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<!--link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"-->
+
 <style>
 body {font-family: "Times New Roman", Georgia, Serif;}
 h1, h2, h3, h4, h5, h6 {
@@ -12,7 +14,6 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .navbar {
-  overflow: hidden;
   background-color: #333;
   position: fixed; /* Set the navbar to fixed position */
   top: 0; /* Position the navbar at the top of the page */
@@ -45,7 +46,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .navbar a:hover, .dropdown:hover .dropbtn {
-  background-color: rgb(94, 92, 92);
+  background-color: rgb(119, 118, 118);
 }
 
 .dropdown-content {
@@ -73,24 +74,26 @@ h1, h2, h3, h4, h5, h6 {
 .dropdown:hover .dropdown-content {
   display: block;
 }
-
 </style>
+</head>
 <body>
 
-<div class="navbar">
-  <a href="#about">About</a>
-  <div class="dropdown">
-    <button class="dropbtn">Projects 
-      <i class="fa fa-caret-down"></i>
-    </button>
-    <div class="dropdown-content">
-      <a href="#agelab">Agelab</a>
-      <a href="#telemetron">Telemetron</a>
-      <a href="#segway">Self Balancing Segway</a>
-    </div>
-  </div> 
-  <a href="#contact">Contact</a>
-</div>
+  <div class="navbar">
+    <a href="#about">About</a>
+    <div class="dropdown">
+      <button class="dropbtn">Projects 
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content">
+        <a href="#agelab">Agelab</a>
+        <a href="#telemetron">Telemetron</a>
+        <a href="#segway">Self Balancing Segway</a>
+        <a href="#winerack">Wine Rack</a>
+        <a href="#2007">Autonomous Robot</a>
+      </div>
+    </div> 
+    <a href="#contact">Contact</a>
+  </div>
 
 <!-- Header -->
 <header class="w3-display-container w3-content w3-wide" style="max-width:1600px;min-width:500px" id="home">
